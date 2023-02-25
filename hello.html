@@ -1,18 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Penguin</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Emi Eliason">
+    <meta name="author" content="Sherry Jiang">
+    <meta name="author" content="Maryam Abuissa">
+    <meta name="author" content="Tina Zhang">
+    <title>New Tab</title>
+    <script src=popup.js></script>
+    <link rel="stylesheet" href="styles.css"></link>
   </head>
-
+<html>
   <body>
-    <h1 id="temperature"></h1>
-    <h2 id="description"></h2>
-    <p id="location"></p>
+    <h2 id="weather">72º outside today!</h2>
+
+      <h1 id="temperature"></h1>
+      <h2 id="description"></h2>
+      <p id="location"></p>
+
+    <div id="window">
+      <div class="window-pane">here i am!</div>
+      <div class="window-pane">here i am!</div>
+      <div class="window-pane">here i am!</div>
+      <div class="window-pane">here i am!</div>
+    </div>
+
+    <div id="to-do-list">
+      <input type="checkbox" id="check" value="done">
+      <label for="check">To do list item 1</label></br>
+      <input type="checkbox" id="check" value="done">
+      <label for="check">To do list item 2</label></br>
+      <input type="checkbox" id="check" value="done">
+      <label for="check">To do list item 3</label></br>
+    </div>
+    
+    <div id="dark-mode">
+      <input type="checkbox" id="check" value="done">
+      <label for="check">Toggle Dark Mode</label></br>
+    </div>
+
+    <button type="button" id="timer">Start Timer?</button>
   </body>
+
+  
 
   <script src="app.js"></script>
 </html>
