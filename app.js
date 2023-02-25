@@ -1,4 +1,3 @@
-
 function getWeather() {
     let temperature = document.getElementById("temperature");
     let description = document.getElementById("description");
