@@ -15,7 +15,6 @@
   "permissions": ["tabs"],
 
   "background": {
-    "scripts": ["popup.js"],
-    "persistent": false
+    "service_worker": "popup.js"
   }
 }
