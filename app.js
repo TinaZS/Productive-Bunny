@@ -3,7 +3,8 @@
 audio = document.getElementById("myAudio");
 button = document.getElementById("playButton");
 
-button.addEventListener("click", function () {
+button.addEventListener("click", function (event) {
+  console.log("hello?");
   if (audio.paused) {
     audio.play();
   } else {
