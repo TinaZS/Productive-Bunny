@@ -1,3 +1,20 @@
+// music
+
+audio = document.getElementById("myAudio");
+button = document.getElementById("playButton");
+
+button.addEventListener("click", function() {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
+
+
+
+
+
 function getWeather() {
   let window = document.getElementById("window");
   window.src = "images/window.png";
@@ -63,7 +80,7 @@ function getWeather() {
         // Load image of could if the weather description is "clouds"
         else if (windowImage.toLowerCase() === "clouds") {
           let image = document.getElementById("weather-image");
-          image.src = "images/clouds.png";
+          image.src = "images/window.png";
         }
       });
   }
