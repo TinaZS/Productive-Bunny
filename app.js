@@ -1,7 +1,10 @@
 function getWeather() {
+  let window = document.getElementById("window");
+  window.src = "images/window.png";
+
   let temperature = document.getElementById("temperature");
-  let description = document.getElementById("description");
-  let location = document.getElementById("location");
+  // let description = document.getElementById("description");
+  // let location = document.getElementById("location");
 
   let api = "https://api.openweathermap.org/data/2.5/weather";
   let apiKey = "f34b50cb362f0c89e2d43ca3b46e50cf";
@@ -29,16 +32,17 @@ function getWeather() {
       .then((data) => {
         console.log(data);
         let temp = data.main.temp;
-        temperature.innerHTML = temp + "° F outside today!";
-        location.innerHTML =
-          data.name + " (" + latitude + "°, " + longitude + "°)";
-        description.innerHTML = data.weather[0].main;
+        temperature.innerHTML = temp + "° F";
+        location.innerHTML = "";
+        // location.innerHTML =
+        //   data.name + " (" + latitude + "°, " + longitude + "°)";
+        //description.innerHTML = data.weather[0].main;
         windowImage = data.weather[0].main;
 
         // Load image of snow if the weather description is "snow"
         if (windowImage.toLowerCase() === "snow") {
           let image = document.getElementById("weather-image");
-          image.src = "images/window.png";
+          image.src = "images/snow.png";
         }
 
         // Load image of rain if the weather description is "rain"
@@ -212,14 +216,6 @@ for (var i = 0; i < completedTasksHolder.children.length; i++) {
   bindTaskEvents(completedTasksHolder.children[i], taskIncomplete);
 }
 
-
-  
-  
-  
-  
-  
-  
-  
 let seconds = document.querySelector(".seconds");
 let minutes = document.querySelector(".minutes");
 let indicator = document.querySelector(".indicator");

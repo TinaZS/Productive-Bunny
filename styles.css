@@ -18,9 +18,40 @@
     gap: 20px 20px;
 } */
 
-.window-pane {
-    background-color: rgb(199, 251, 252);
+#weather {
+    /* background-color: pink; */
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
 }
+
+#window {
+    width: 375px;
+    height: 300px;
+    position: relative;
+    top: -300px;
+    left: 0px;
+}
+
+#temperature {
+    padding: 5px;
+    text-align: center;
+    margin: 0;
+}
+
+#weather-image {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 375px;
+    height: 300px;
+}
+
+/* .window-pane {
+    background-color: rgb(199, 251, 252);
+} */
 
 #dark-mode {
     background-color: rgb(236, 193, 39);
@@ -185,6 +216,9 @@ body {
 
 
   .clock-container {
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
     display: flex;
     justify-content: space-between;
     width: 500px;
