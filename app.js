@@ -38,7 +38,7 @@ function getWeather() {
         // Load image of snow if the weather description is "snow"
         if (windowImage.toLowerCase() === "snow") {
           let image = document.getElementById("weather-image");
-          image.src = "images/snow.png";
+          image.src = "images/window.png";
         }
 
         // Load image of rain if the weather description is "rain"
