@@ -94,6 +94,12 @@ function getWeather() {
           let image = document.getElementById("weather-image");
           image.src = "images/clouds.png";
         }
+
+        // else
+        else{
+          let image = document.getElementById("weather-image");
+          image.src = "images/clouds.png";
+        }
       });
   }
 
