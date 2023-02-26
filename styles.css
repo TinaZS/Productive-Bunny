@@ -235,7 +235,7 @@ body {
     right: 60px;
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 350px;
     align-items: center;
     background-color: #fff;
     border-radius: 1000px;
@@ -267,9 +267,10 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    font-size: 70%;
     color: #555;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     /* border: 1px solid; */
     /* gap: 20px; */
   }
@@ -291,14 +292,14 @@ body {
   }
   
   .clock-buttons-container {
-    font-size: 3.2em;
+    font-size: 3em;
     display: flex;
     padding: 0 20px;
   }
   
   .clock-buttons-container i {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
