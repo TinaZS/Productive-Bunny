@@ -18,6 +18,25 @@ body {
     gap: 20px 20px;
 } */
 
+#time {
+    font-family: 'Silkscreen';
+    color: rgb(250, 183, 195);
+    font-size: 35px;
+    transform: rotate3d(1, 2, 3, 15deg);
+    position: absolute;
+    right: 385px;
+    bottom: 170px;
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2, jump-none);
+}
+
+@keyframes blink {
+    from {color: rgb(250, 183, 195);}
+    to {color: #32324A;}
+  }
+
 #weather {
     /* background-color: pink; */
     top: 10px;
