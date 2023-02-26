@@ -131,7 +131,7 @@ body {
     padding: 5px; /* Add some padding to the container */
     border-radius: 5px; /* Add rounded corners to the container */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
-    height: 200px;
+    height: 250px;
     overflow-y:auto;
   }
   
