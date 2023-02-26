@@ -1,8 +1,17 @@
 // current time
 
-var today = new Date();
-var time =
-  today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+function displayTime() {
+  var today = new Date();
+  var hours = "0" + today.getHours();
+  var minutes = "0" + today.getMinutes();
+  var time = hours.slice(-2) + ":" + minutes.slice(-2);
+
+  const timeDiv = document.getElementById("time");
+  timeDiv.textContent = "" + time;
+}
+
+// displayTime();
+setInterval(displayTime, 1000);
 
 // music
 
