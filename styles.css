@@ -231,8 +231,8 @@ body {
 
   .clock-container {
     position: absolute;
-    bottom: 60px;
-    right: 60px;
+    top: 10px;
+    right: 10px;
     display: flex;
     justify-content: space-between;
     width: 350px;
