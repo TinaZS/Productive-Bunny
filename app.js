@@ -32,7 +32,7 @@ function getWeather() {
   window.src = "images/window.png";
 
   let temperature = document.getElementById("temperature");
-  // let description = document.getElementById("description");
+  let description = document.getElementById("description");
   // let location = document.getElementById("location");
 
   let api = "https://api.openweathermap.org/data/2.5/weather";
@@ -65,7 +65,7 @@ function getWeather() {
         location.innerHTML = "";
         // location.innerHTML =
         //   data.name + " (" + latitude + "°, " + longitude + "°)";
-        // description.innerHTML = data.weather[0].main;
+        description.innerHTML = data.weather[0].main;
         windowImage = data.weather[0].main;
 
         // Load image of snow if the weather description is "snow"
@@ -115,7 +115,7 @@ getWeather();
 */
 
 var taskInput = document.getElementById("new-task"); // new-task
-var addButton = document.getElementsByTagName("button")[0]; //first button
+var addButton = document.getElementById("add-button"); //add-button
 var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
 var completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
 
@@ -294,12 +294,14 @@ stop.addEventListener("click", () => {
   indicator.style.strokeDashoffset = 600 - (counterValue / pomoValue) * 600;
 });
 
-
 dragElement(document.getElementById("clock"));
 
 function dragElement(elmnt) {
-  console.log("Dragging timer")
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  console.log("Dragging timer");
+  var pos1 = 0,
+    pos2 = 0,
+    pos3 = 0,
+    pos4 = 0;
   if (document.getElementById(elmnt.id + "header")) {
     // if present, the header is where you move the DIV from:
     document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
@@ -328,8 +330,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     pos4 = e.clientY;
     // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    elmnt.style.top = elmnt.offsetTop - pos2 + "px";
+    elmnt.style.left = elmnt.offsetLeft - pos1 + "px";
   }
 
   function closeDragElement() {
