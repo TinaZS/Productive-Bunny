@@ -29,11 +29,44 @@ function getWeather() {
         .then(data => {
           console.log(data);
           let temp = data.main.temp;
-          temperature.innerHTML = temp + "° F";
+          temperature.innerHTML = temp + "° F outside today!";
           location.innerHTML =
             data.name + " (" + latitude + "°, " + longitude + "°)";
           description.innerHTML = data.weather[0].main;
+          windowImage = data.weather[0].main;
+
+          // Load image of snow if the weather description is "snow"
+    if (windowImage.toLowerCase() === "snow") {
+      let image = document.getElementById("weather-image");
+      image.src = "images/snow.png";
+    }
+    
+    // Load image of rain if the weather description is "rain"
+    else if (windowImage.toLowerCase() === "rain" || data.weather[0].main.toLowerCase() === "thunderstorm" ||data.weather[0].main.toLowerCase() === "drizzle") {
+      let image = document.getElementById("weather-image");
+      image.src = "images/rain.png";
+    }
+// Load image of sun if the weather description is "clear"
+    else if (windowImage.toLowerCase() === "clear") {
+      let image = document.getElementById("weather-image");
+      image.src = "images/sun.png";
+    }
+
+    // Load image of could if the weather description is "clouds"
+    else if (windowImage.toLowerCase() === "clouds") {
+      let image = document.getElementById("weather-image");
+      image.src = "images/clouds.png";
+    }
+
+
         });
+
+         
+  
+    
+
+
+
     }
   
     function error() {
@@ -42,3 +75,7 @@ function getWeather() {
   }
   
   getWeather();
+
+
+  
+// Thunderstorm, Drizzle, Rain, Snow, Clear, Clouds, Others 
