@@ -70,6 +70,10 @@ body {
     left: 775px;
 }
 
+#description {
+    display: none;
+}
+
 .window-pane {
     background-color: rgb(199, 251, 252);
 }
