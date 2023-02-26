@@ -1,0 +1,23 @@
+# Node.js files
+node_modules/
+npm-debug.log*
+
+# Compiled output
+dist/
+build/
+*.log
+
+# Dependency directories
+jspm_packages/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+
+# Miscellaneous
+Thumbs.db
+.DS_Store
+This file is designed to exclude common files and directories that are generated or unnecessary for version control, such as Node.js dependencies, compiled output, editor configuration files, and system-specific files.
+
+You may need to adjust this list based on the specific tools and libraries you are using in your project.
