@@ -100,7 +100,7 @@ getWeather();
 */
 
 var taskInput = document.getElementById("new-task"); // new-task
-var addButton = document.getElementsByTagName("button")[0]; //first button
+var addButton = document.getElementById("add-button"); //add-button
 var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
 var completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
 
