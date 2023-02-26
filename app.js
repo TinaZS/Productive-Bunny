@@ -1,3 +1,20 @@
+// music
+
+audio = document.getElementById("myAudio");
+button = document.getElementById("playButton");
+
+button.addEventListener("click", function() {
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+});
+
+
+
+
+
 function getWeather() {
   let temperature = document.getElementById("temperature");
   let description = document.getElementById("description");
@@ -38,7 +55,7 @@ function getWeather() {
         // Load image of snow if the weather description is "snow"
         if (windowImage.toLowerCase() === "snow") {
           let image = document.getElementById("weather-image");
-          image.src = "images/window.png";
+          image.src = "images/snow.png";
         }
 
         // Load image of rain if the weather description is "rain"
@@ -59,7 +76,7 @@ function getWeather() {
         // Load image of could if the weather description is "clouds"
         else if (windowImage.toLowerCase() === "clouds") {
           let image = document.getElementById("weather-image");
-          image.src = "images/clouds.png";
+          image.src = "images/window.png";
         }
       });
   }
