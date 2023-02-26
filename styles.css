@@ -18,6 +18,25 @@ body {
     gap: 20px 20px;
 } */
 
+#time {
+    font-family: 'Silkscreen';
+    color: rgb(250, 183, 195);
+    font-size: 35px;
+    transform: rotate3d(1, 2, 3, 15deg);
+    position: absolute;
+    right: 385px;
+    bottom: 170px;
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(2, jump-none);
+}
+
+@keyframes blink {
+    from {color: rgb(250, 183, 195);}
+    to {color: #32324A;}
+  }
+
 #weather {
     /* background-color: pink; */
     top: 10px;
@@ -85,7 +104,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    font-family: sans-serif;
+    font-family: "Handlee";
     flex-direction: column;
     background-color: #f4f5f8;
     gap: 10px;
@@ -104,14 +123,16 @@ body {
     display: block;
     width: 400px;
     margin: 0px;
-    font-family: Lato, sans-serif;
+    font-family: Lato, "Handlee";
   } 
   
   .todolist-container {
-    background-color: #E6E6FA; /* Use a light purple color */
+    background-color: #f7ecf6;; /* Use a light pink color */
     padding: 5px; /* Add some padding to the container */
     border-radius: 5px; /* Add rounded corners to the container */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+    height: 200px;
+    overflow-y:auto;
   }
   
   ul {
@@ -120,13 +141,16 @@ body {
   }
   li * {
     float: left;
+    
   }
   li, h3 {
     clear:both;
     list-style:none;
+    
   }
   input, button {
     outline: none;
+    
   }
   button {
     background: none;
@@ -135,8 +159,9 @@ body {
     font-size: 15px;
     width: 60px;
     margin: 0px 0 0;
-    font-family: Lato, sans-serif;
+    font-family: Lato, "Handlee";
     cursor: pointer;
+    
   }
   button:hover {
     color: #333;
@@ -147,10 +172,11 @@ body {
     color: #333;
     font-weight: 700;
     font-size: 15px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #674f8f;
     padding: 10px 0 10px;
     margin: 0;
     text-transform: uppercase;
+    font-family: 'Permanent Marker';
   }
   input[type="text"] {
     margin: 0;
@@ -161,7 +187,7 @@ body {
     border: 1px solid #ddd;
     background: #fff;
     border-radius: 6px;
-    font-family: Lato, sans-serif;
+    font-family: Lato, "Handlee";
     color: #888;
   }
   input[type="text"]:focus {
@@ -175,7 +201,7 @@ body {
   }
   input#new-task {
     float: left;
-    width: 318px;
+    width: 70%;
   }
   p > button:hover {
     color: #0FC57C;
@@ -238,10 +264,10 @@ body {
     width: 350px;
     align-items: center;
     border-radius: 1000px;
-    font-family: sans-serif;
+    font-family: "Handlee";
     filter: drop-shadow(0px 2px 3px #64676b57);
     background-color: #f7ecf6;
-    gap: 10px;rgb(247, 224, 247)
+    gap: 10px;
   }
   /*// Circle styles.*/
   circle {
