@@ -1,4 +1,4 @@
-# ProduciBunny: Redefining Productivity, One Tab at a Time 🐰
+# ProductiBunny: Redefining Productivity, One Tab at a Time 🐰
 
 ## 🚀 Introduction
 
