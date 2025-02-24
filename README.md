@@ -1,10 +1,14 @@
 # ProductiBunny: Redefining Productivity, One Tab at a Time 🐰
 
+
 ## 🚀 Introduction
 
 Conventional productivity tools, like focus timers or to-do list apps on your phone or desktop, can often feel more like distractions. They pull your attention away from what truly matters—the work and research you're doing in your browser.
 
 Enter **ProduciBunny**—a game-changing Chrome extension designed to transform your browser experience into a seamless productivity hub. With **ProduciBunny**, every new tab becomes an opportunity to enhance focus without the need to juggle multiple apps or tools.
+
+![ProduciBunny Screenshot1](readme_images/Intro1.png)
+
 
 ## 🖥️ How It Works
 
@@ -53,7 +57,7 @@ With **ProduciBunny**, the need to jump between apps or unlock your phone is gon
 ## 🌱 Contribution
 This project is built by an Amherst College team: Maryam Abuissa, Sherry Jiang, Emi Eliason, and Tina Zhang. 
 
-
+![ProduciBunny Screenshot2](readme_images/Intro2.png)
 ---
 
 With **ProduciBunny**, redefine your productivity without leaving your browser. 🐰
