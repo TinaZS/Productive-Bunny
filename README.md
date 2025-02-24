@@ -7,7 +7,7 @@ Conventional productivity tools, like focus timers or to-do list apps on your ph
 
 Enter **ProduciBunny**—a game-changing Chrome extension designed to transform your browser experience into a seamless productivity hub. With **ProduciBunny**, every new tab becomes an opportunity to enhance focus without the need to juggle multiple apps or tools.
 
-![ProduciBunny Screenshot1](readme_images/Intro1.png)
+![ProduciBunny Screenshot1](readme_images/intro1.png)
 
 
 ## 🖥️ How It Works
