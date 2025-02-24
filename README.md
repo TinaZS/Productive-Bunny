@@ -1,4 +1,4 @@
-# ProductiBunny: Redefining Productivity, One Tab at a Time 🐰
+# Producti-Bunny: Redefining Productivity, One Tab at a Time 🐰
 
 
 ## 🚀 Introduction
@@ -6,8 +6,6 @@
 Conventional productivity tools, like focus timers or to-do list apps on your phone or desktop, can often feel more like distractions. They pull your attention away from what truly matters—the work and research you're doing in your browser.
 
 Enter **ProduciBunny**—a game-changing Chrome extension designed to transform your browser experience into a seamless productivity hub. With **ProduciBunny**, every new tab becomes an opportunity to enhance focus without the need to juggle multiple apps or tools.
-
-![ProduciBunny Screenshot1](readme_images/intro1.png)
 
 
 ## 🖥️ How It Works
@@ -21,6 +19,9 @@ Whenever you open a new tab in your browser, ProduciBunny turns the idle space o
 
 All of these tools are neatly integrated into a calm and soothing interface that’s designed to help you stay on track—no need to unlock your phone or launch apps. 
 
+![ProduciBunny Screenshot1](readme_images/intro1.png)
+
+
 ## 🎯 Features
 
 - **One-click access**: Instantly launch productivity tools right from your browser tab.
@@ -28,6 +29,8 @@ All of these tools are neatly integrated into a calm and soothing interface that
 - **To-do list**: Keep your tasks organized and in sight, so you never forget what's next.
 - **Pomodoro timer**: Boost focus with a built-in Pomodoro timer to break tasks into manageable chunks.
 - **Study music**: Enjoy curated playlists designed to help you concentrate and stay productive.
+
+![ProduciBunny Screenshot2](readme_images/Intro2.png)
 
 ## 🌟 Why ProduciBunny?
 
@@ -57,7 +60,6 @@ With **ProduciBunny**, the need to jump between apps or unlock your phone is gon
 ## 🌱 Contribution
 This project is built by an Amherst College team: Maryam Abuissa, Sherry Jiang, Emi Eliason, and Tina Zhang. 
 
-![ProduciBunny Screenshot2](readme_images/Intro2.png)
 ---
 
 With **ProduciBunny**, redefine your productivity without leaving your browser. 🐰
